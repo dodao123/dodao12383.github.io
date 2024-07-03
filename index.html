@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resolution Options</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h1 style="color: cornflowerblue;">PICK ME AND CHOOSE</h1>
+        <div class="select-container">
+            <select id="resolutionSelect" onchange="selectResolution()">
+                <option value="">Select Resolution</option>
+                <option value="R.png">144p</option>
+                <option value="8-bit-miniatur-earth-pixel-the-world-in-illustrations-globe-in-pixel-art-vector-removebg-preview.png">240p</option>
+                <option value="OIP-removebg-preview.png">480p</option>
+                <option value="1-nasa-removebg-preview.png">720p</option>
+                <option value="Download.mp4" data-type="video">1080p</option>
+            </select>
+        </div>
+        <div class="display">
+            <img id="display-image" src="" alt="Displayed Image">
+            <video id="display-video" src="" controls></video>
+        </div>
+    </div>
+
+    <!-- Đoạn div để chứa các trái tim -->
+    <div id="hearts-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
